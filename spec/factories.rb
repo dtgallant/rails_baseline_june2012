@@ -9,16 +9,9 @@ FactoryGirl.define do
       admin true
     end
   end
-end
 
-
-=begin
-FactoryGirl.define do
-  factory :user do
-    name     "Michael Hartl"
-    email    "michael@example.com"
-    password "foobar"
-    password_confirmation "foobar"
+  factory :micropost do
+    content "Lorem ipsum"
+    user
   end
 end
-=end
